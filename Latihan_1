@@ -1,0 +1,41 @@
+INPUT
+
+# Dictionary daftar kontak
+kontak = {
+    "Firman": "085817583146",
+    "Dani": "085678999",
+    "Farhan": "081333444"
+}
+print("=" * 40)
+# 2. Tambah kontak baru dengan nama ilal
+kontak["Ilal"] = "087654544"
+
+# 3. Ubah kontak Dani dengan nomor baru
+kontak["Dani"] = "088999776"
+
+# 4. Tampilkan semua nama
+print("Nama   |  Nomer Telpon")
+print("=" * 40)
+
+for nama, nomor in kontak.items():
+    print(nama, "|", nomor)
+print("=" * 40)
+
+# 7. Hapus kontak Dani
+del kontak["Dani"]
+
+print("Kontak setelah di Dani hapus:", kontak)
+
+OUTPUT
+C:\Users\admin\PycharmProjects\PythonProject\.venv\Scripts\python.exe C:\Users\admin\PycharmProjects\PythonProject\praktikum_5.py 
+========================================
+Nama   |  Nomer Telpon
+========================================
+Firman | 085817583146
+Dani | 088999776
+Farhan | 081333444
+Ilal | 087654544
+========================================
+Kontak setelah di Dani hapus: {'Firman': '085817583146', 'Farhan': '081333444', 'Ilal': '087654544'}
+
+Process finished with exit code 0
